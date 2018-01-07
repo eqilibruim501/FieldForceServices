@@ -2,7 +2,7 @@ package com.nnb.fieldforceapp.ui
 
 import android.os.Bundle
 import com.nnb.fieldforceapp.R
-import com.nnb.fieldforceapp.base.BaseActivity
+import com.nnb.fieldforceapp.base.activities.BaseActivity
 
 class MainActivity : BaseActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {

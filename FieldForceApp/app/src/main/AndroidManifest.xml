@@ -3,6 +3,7 @@
     package="com.nnb.fieldforceapp">
 
     <application
+        android:name=".FieldForceApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,12 +12,17 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ui.signin.SignInActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="androidx.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".ui.root.RootActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".ui.detail.DetailActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
     </application>

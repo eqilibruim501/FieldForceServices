@@ -20,6 +20,18 @@ allprojects {
         google()
         jcenter()
     }
+
+    //Global variables for all modules. config here
+    project.ext {
+        supportVersion = '26.1.0'
+        rxandroidVersion = '2.0.1'
+        rxjava2Version = '2.1.0'
+        glideVersion = '3.7.0'
+        androidPluginVersion = '3.0.0-alpha5'
+        daggerVersion = '2.11'
+        annotationVersion = '10.0-b28'
+        eventBusVersion = '3.1.1'
+    }
 }
 
 task clean(type: Delete) {

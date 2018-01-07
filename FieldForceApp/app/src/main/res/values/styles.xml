@@ -8,4 +8,33 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.ImageView">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="AppTheme.TextView">
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="AppTheme.TextView.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_xMedium</item>
+    </style>
+
+    <style name="AppTheme.TextView.Description">
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="AppTheme.ParentLayout">
+        <item name="android:paddingTop">@dimen/parent_padding_ver</item>
+        <item name="android:paddingBottom">@dimen/parent_padding_ver</item>
+        <item name="android:paddingLeft">@dimen/parent_padding_hor</item>
+        <item name="android:paddingRight">@dimen/parent_padding_hor</item>
+    </style>
+
+    <style name="AppTheme.ParentLayout.RecyclerItem">
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
 </resources>
