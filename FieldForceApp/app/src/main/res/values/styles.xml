@@ -37,4 +37,23 @@
     <style name="AppTheme.ParentLayout.RecyclerItem">
         <item name="android:layout_marginBottom">1dp</item>
     </style>
+
+    <style name="productContainer" parent="AppTheme.ParentLayout">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:layout_marginBottom">@dimen/margin_xxxSmall</item>
+    </style>
+
+    <style name="AppTheme.TextView.Field">
+        <item name="android:textSize">@dimen/text_xMedium</item>
+        <item name="android:layout_marginRight">@dimen/margin_medium</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="AppTheme.TextView.Field.Require">
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
+    <style name="AppTheme.TextView.Value"></style>
+
+    <style name="AppTheme.EditText"></style>
 </resources>

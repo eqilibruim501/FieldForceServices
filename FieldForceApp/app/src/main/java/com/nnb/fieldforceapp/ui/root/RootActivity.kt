@@ -10,12 +10,9 @@ import com.nnb.fieldforceapp.base.activities.DIActivity
 import com.nnb.fieldforceapp.base.recyclerView.BaseViewHolder
 import com.nnb.fieldforceapp.data.model.Action
 import com.nnb.fieldforceapp.di.activities.root.RootModule
-import com.nnb.fieldforceapp.ui.detail.DetailActivity
 import kotlinx.android.synthetic.main.activity_root.*
 import javax.inject.Inject
-import android.R.menu
-import android.view.MenuInflater
-
+import com.nnb.fieldforceapp.ui.products.ProductsActivity
 
 
 /**
@@ -62,7 +59,7 @@ class RootActivity : DIActivity(),
 	}
 
 	override fun onClickItem(item: Action?, position: Int) {
-		DetailActivity.start(this)
+		ProductsActivity.start(this)
 	}
 
 	private fun setupRecyclerView() {

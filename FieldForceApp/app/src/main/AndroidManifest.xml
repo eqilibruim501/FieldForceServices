@@ -12,10 +12,11 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ui.signin.SignInActivity">
             <intent-filter>
-                <action android:name="androidx.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <activity
             android:name=".ui.root.RootActivity"
             android:screenOrientation="portrait"
@@ -24,6 +25,18 @@
         <activity
             android:name=".ui.detail.DetailActivity"
             android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".ui.products.ProductsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/products"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".ui.createProduct.CreateProductActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/product"
             android:theme="@style/AppTheme" />
     </application>
 

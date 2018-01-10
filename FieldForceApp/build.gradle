@@ -10,6 +10,8 @@ buildscript {
         classpath 'com.android.tools.build:gradle:3.0.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
+//        realm db: https://realm.io/docs/java/latest/
+        classpath "io.realm:realm-gradle-plugin:4.3.1"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -31,6 +33,7 @@ allprojects {
         daggerVersion = '2.11'
         annotationVersion = '10.0-b28'
         eventBusVersion = '3.1.1'
+        realmVersion = '4.3.1'
     }
 }
 
