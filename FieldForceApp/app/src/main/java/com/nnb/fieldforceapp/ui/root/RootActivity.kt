@@ -12,7 +12,7 @@ import com.nnb.fieldforceapp.data.model.Action
 import com.nnb.fieldforceapp.di.activities.root.RootModule
 import kotlinx.android.synthetic.main.activity_root.*
 import javax.inject.Inject
-import com.nnb.fieldforceapp.ui.products.ProductsActivity
+import com.nnb.fieldforceapp.ui.cases.CasesActivity
 
 
 /**
@@ -59,7 +59,7 @@ class RootActivity : DIActivity(),
 	}
 
 	override fun onClickItem(item: Action?, position: Int) {
-		ProductsActivity.start(this)
+		CasesActivity.start(this)
 	}
 
 	private fun setupRecyclerView() {

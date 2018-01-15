@@ -16,7 +16,7 @@ class Action(val id: Int, var imageResId: Int, var name: String, var description
 			ls.add(Action(3, R.mipmap.ic_launcher_round, "Bookable Resource Bookings", "List of Bookable Resource Bookings"))
 			ls.add(Action(4, R.mipmap.ic_launcher_round, "Contacts", "List of Contacts"))
 			ls.add(Action(5, R.mipmap.ic_launcher_round, "Customer Asset", "List of Customer Asset"))
-			ls.add(Action(6, R.mipmap.ic_launcher_round, "Products", "List of Products"))
+			ls.add(Action(6, R.mipmap.ic_case, "Case", "List of Cases"))
 			ls.add(Action(7, R.mipmap.ic_launcher_round, "Agreements", "List of Agreements"))
 			ls.add(Action(8, R.mipmap.ic_launcher_round, "Time Off Requests", "List of Time Off Requests"))
 			ls.add(Action(9, R.mipmap.ic_gps, "Map", "View Entities on a Map"))

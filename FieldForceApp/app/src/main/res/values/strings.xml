@@ -5,8 +5,8 @@
     <string name="password">Password</string>
     <string name="sign_in">Sign In</string>
     <string name="add">Add</string>
-    <string name="products">Products</string>
-    <string name="product">Product</string>
+    <string name="cases">Cases</string>
+    <string name="case2">Case</string>
     <string name="save">Save</string>
     <string name="taxable">Taxable</string>
     <string name="yes">Yes</string>
@@ -18,11 +18,17 @@
     <string name="defaultVendor">Default Vendor</string>
     <string name="decimalsSupported">Decimals Supported</string>
     <string name="none">None</string>
-    <string name="productId">Product ID</string>
+    <string name="caseId">Case ID</string>
     <string name="name">Name</string>
     <string name="purchaseName">Purchase Name</string>
-    <string name="productType">Product Type</string>
+    <string name="caseType">Case Type</string>
     <string name="saleInventory">Sales Inventory</string>
     <string name="fieldServiceProductType">Field Service Product Type</string>
     <string name="quantityOnHand">Quantity On Hand</string>
+    <string name="caseNumber">Case Number</string>
+    <string name="priority">Priority</string>
+    <string name="origin">Origin</string>
+    <string name="customer">Customer</string>
+    <string name="statusReason">Status Reason</string>
+    <string name="save_successful">Save successful</string>
 </resources>

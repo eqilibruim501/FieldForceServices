@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        style="@style/AppTheme.ParentLayout.RecyclerItem"
+        style="@style/AppTheme.ParentLayout.ActionItem"
         android:background="@color/colorWhite"
         android:gravity="center">
         <ImageView

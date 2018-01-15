@@ -20,7 +20,13 @@
 
     <style name="AppTheme.TextView.Title">
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">@dimen/text_xMedium</item>
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="AppTheme.TextView.ID">
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_xlarge</item>
     </style>
 
     <style name="AppTheme.TextView.Description">
@@ -34,11 +40,18 @@
         <item name="android:paddingRight">@dimen/parent_padding_hor</item>
     </style>
 
-    <style name="AppTheme.ParentLayout.RecyclerItem">
+    <style name="AppTheme.ParentLayout.ActionItem">
         <item name="android:layout_marginBottom">1dp</item>
     </style>
 
-    <style name="productContainer" parent="AppTheme.ParentLayout">
+    <style name="AppTheme.ParentLayout.RecyclerItem">
+        <item name="android:layout_marginRight">@dimen/parent_margin_hor</item>
+        <item name="android:layout_marginLeft">@dimen/parent_margin_hor</item>
+        <item name="android:layout_marginTop">@dimen/parent_margin_ver</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+    <style name="caseContainer" parent="AppTheme.ParentLayout">
         <item name="android:gravity">center_vertical</item>
         <item name="android:background">@color/colorWhite</item>
         <item name="android:layout_marginBottom">@dimen/margin_xxxSmall</item>

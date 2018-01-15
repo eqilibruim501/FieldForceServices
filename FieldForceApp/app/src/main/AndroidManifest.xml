@@ -28,15 +28,15 @@
             android:theme="@style/AppTheme" />
 
         <activity
-            android:name=".ui.products.ProductsActivity"
+            android:name=".ui.cases.CasesActivity"
             android:screenOrientation="portrait"
-            android:label="@string/products"
+            android:label="@string/cases"
             android:theme="@style/AppTheme" />
 
         <activity
-            android:name=".ui.createProduct.CreateProductActivity"
+            android:name=".ui.createCase.CreateCaseActivity"
             android:screenOrientation="portrait"
-            android:label="@string/product"
+            android:label="@string/case2"
             android:theme="@style/AppTheme" />
     </application>
 

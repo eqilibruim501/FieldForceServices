@@ -7,6 +7,9 @@ import android.net.ConnectivityManager
 import android.support.design.widget.Snackbar
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.Toolbar
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import com.nnb.fieldforceapp.R
@@ -74,5 +77,24 @@ abstract class BaseActivity : AppCompatActivity() {
 		supportFragmentManager.beginTransaction()
 				.replace(layoutId, fm)
 				.commit()
+	}
+
+	/**
+	 * setup toolbar quickly
+	 * */
+	fun setupToolBar(toolbar: Toolbar) {
+		setSupportActionBar(toolbar)
+		supportActionBar?.setDisplayHomeAsUpEnabled(true)
+		supportActionBar?.setDisplayShowHomeEnabled(true)
+		toolbar.setNavigationOnClickListener { finish() }
+	}
+
+	/**
+	 * setup recycler view quickly
+	 * */
+	fun setupRecyclerView(recyclerView: RecyclerView, adapter: RecyclerView.Adapter<*>, layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(this)) {
+		recyclerView.setItemViewCacheSize(20)
+		recyclerView.layoutManager = layoutManager
+		recyclerView.adapter = adapter
 	}
 }

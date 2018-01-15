@@ -1,9 +1,9 @@
 package com.nnb.fieldforceapp.di.app
 
 import com.nnb.fieldforceapp.FieldForceApp
-import com.nnb.fieldforceapp.di.activities.createProduct.CreateProductComponent
+import com.nnb.fieldforceapp.di.activities.cases.CasesComponent
+import com.nnb.fieldforceapp.di.activities.createCase.CreateCaseComponent
 import com.nnb.fieldforceapp.di.activities.root.RootComponent
-import com.nnb.fieldforceapp.ui.root.RootActivity
 import dagger.Component
 import javax.inject.Singleton
 
@@ -16,5 +16,6 @@ interface AppComponent {
 	fun inject(target: FieldForceApp)
 
 	fun rootComponentBuilder(): RootComponent.Builder
-	fun createProductComponentBuilder(): CreateProductComponent.Builder
+	fun createCaseComponentBuilder(): CreateCaseComponent.Builder
+	fun casesComponentBuilder(): CasesComponent.Builder
 }
