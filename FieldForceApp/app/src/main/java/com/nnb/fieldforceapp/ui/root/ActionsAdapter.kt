@@ -17,12 +17,12 @@ class ActionsAdapter(private val listener: BaseViewHolder.OnClickListener<Action
 	}
 
 	inner class ActionHolder(parent: ViewGroup) : BaseViewHolder<Action>(parent, R.layout.layout_item_action) {
-		private val bind : LayoutItemActionBinding = DataBindingUtil.bind(itemView)
+		private val bind : LayoutItemActionBinding? = DataBindingUtil.bind(itemView)
 		override fun onBindItem(item: Action, position: Int) {
 			setOnClickListener(listener)
-			bind.item = item
-			bind.imgIcon.setImageResource(item.imageResId)
-			bind.executePendingBindings()
+			bind?.item = item
+			bind?.imgIcon?.setImageResource(item.imageResId)
+			bind?.executePendingBindings()
 		}
 	}
 }

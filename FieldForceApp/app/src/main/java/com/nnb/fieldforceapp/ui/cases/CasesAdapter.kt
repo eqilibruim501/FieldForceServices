@@ -17,9 +17,9 @@ class CasesAdapter : BaseAdapter<Case>() {
 	}
 
 	inner class CaseHolder(parent: ViewGroup) : BaseViewHolder<Case>(parent, R.layout.layout_case_item) {
-		private val bind: LayoutCaseItemBinding = DataBindingUtil.bind(itemView)
+		private val bind: LayoutCaseItemBinding? = DataBindingUtil.bind(itemView)
 		override fun onBindItem(item: Case, position: Int) {
-			bind.item = item
+			bind?.item = item
 		}
 
 	}
